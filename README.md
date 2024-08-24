@@ -112,6 +112,8 @@ The Vue.js frontend will be available at `http://localhost:5173`.
 ## Throttling Requests
 
 To ensure fair usage, the API is throttled to allow a maximum of 5 requests per minute per IP address, with each request returning up to 10 results.
+## Api Endpoints
+[https://cloudy-shuttle-5925.postman.co/documentation/10483274-bf578774-34a2-4f20-939b-f0382738aeea/publish?workspaceId=2e25effb-16c9-4db6-82eb-f2b83ccf543a](https://cloudy-shuttle-5925.postman.co/documentation/10483274-bf578774-34a2-4f20-939b-f0382738aeea/publish?workspaceId=2e25effb-16c9-4db6-82eb-f2b83ccf543a);
 
 ## Contributing
 
