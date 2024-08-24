@@ -15,16 +15,16 @@ let socket:Socket;
 // Function to fetch the initial count from the server
 const fetchInitialCount = async () => {
   try {
-    const response = await fetch('http://localhost:3000/api/autobots/count'); // Replace with your actual API endpoint
+    const response = await fetch('http://localhost:3500/api/autobots/generateAutobots'); // Replace with your actual API endpoint
     const data = await response.json();
-    autobotCount.value = data.count;
+    autobotCount.value = data.count || 0;
   } catch (error) {
     console.error('Failed to fetch initial count:', error);
   }
 };
 
 onMounted(() => {
-  socket = io('http://localhost:3000/api/v1/'); 
+  socket = io('http://localhost:3500'); 
 
   // Listen for updates from the server
   socket.on('autobotCountUpdated', (count) => {
