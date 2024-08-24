@@ -15,7 +15,7 @@ let socket:Socket;
 // Function to fetch the initial count from the server
 const fetchInitialCount = async () => {
   try {
-    const response = await fetch('http://localhost:3500/api/autobots/generateAutobots'); // Replace with your actual API endpoint
+    const response = await fetch('http://localhost:3500/api/v1/autobot/generateAutobots'); // Replace with your actual API endpoint
     const data = await response.json();
     autobotCount.value = data.count || 0;
   } catch (error) {
